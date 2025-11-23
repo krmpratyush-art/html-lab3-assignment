@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Portfolio</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+}
+
+header {
+  background: #0a4dbf;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 1.4rem;
+}
+
+nav a {
+  margin-left: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  background: white;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-text h1 span {
+  color: #f0644c;
+}
+
+.hero-text p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.hero img {
+  width: 260px;
+}
+
+.section {
+  padding: 2rem 2rem;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.section p {
+  max-width: 900px;
+  line-height: 1.6rem;
+}
+
+.skills-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.skill-box {
+  background: #0a4dbf;
+  color: white;
+  padding: 1.2rem;
+  width: 30%;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.project-box {
+  background: white;
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.project-box h3 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.project-box p {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.contact-form {
+  width: 350px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.7rem 0;
+  border: 1px solid #0a4dbf;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 0.7rem;
+  background: #0a4dbf;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #083a8e;
+}
+
+footer {
+  background: #0a4dbf;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .skills-container {
+    flex-direction: column;
+  }
+  .skill-box {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>My Portfolio</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hi, I am <br> <span>Full Stack Developer</span></h1>
+    <p>Building modern web applications with MERN stack.</p>
+  </div>
+  <img src="https://img.freepik.com/free-vector/smiling-young-man-illustration_1308-173524.jpg?semt=ais_hybrid&w=740&q=80" alt="Person Illustration">
+</section>
+
+<section class="section" id="about">
+  <h2>About Me</h2>
+  <p>
+    Hello! My name is Kumar Pratyush and I am currently learning web development.
+    This is my first portfolio website where I showcase my passion for creating 
+    interactive and responsive web pages. I am a student of KR Mangalam University, 
+    pursuing a B.Tech(CSE) with specialization ( Robotics and AI )degree, and I am deeply interested in technology and coding. 
+    I love exploring new skills every day, and I always aim to improve my knowledge 
+    in the field of web development.
+  </p>
+</section>
+
+<section class="section" id="skills">
+  <h2>My Skills</h2>
+  <div class="skills-container">
+    <div class="skill-box">HTML <br> Beginner</div>
+    <div class="skill-box">CSS <br> Beginner</div>
+    <div class="skill-box">JavaScript <br> Learning</div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <h2>My Projects</h2>
+  <div class="project-box">
+    <h3>Project 1</h3>
+    <p>A simple HTML & CSS webpage.</p>
+  </div>
+
+  <div class="project-box">
+    <h3>Project 2</h3>
+    <p>Another awesome mini project.</p>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Me</h2>
+
+  <div class="contact-form">
+    <label>Name:</label>
+    <input type="text" placeholder="Enter your name">
+
+    <label>Email:</label>
+    <input type="email" placeholder="Enter your email">
+
+    <label>Message:</label>
+    <textarea rows="4" placeholder="Write your message"></textarea>
+
+    <button>Send</button>
+  </div>
+</section>
+
+</body>
+</html>
